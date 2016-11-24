@@ -3,7 +3,7 @@ package AdvancedTopics.Generics;
 import java.util.List;
 
 @SuppressWarnings("hiding")
-public class GenericSingleTypeScenario<Integer> {
+public class GenericSingleTypeScenario {
 
 	 public void readOnly(List<? extends Number> numbers) {
 	  for (Number number : numbers) {

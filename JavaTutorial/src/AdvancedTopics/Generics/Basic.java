@@ -1,6 +1,6 @@
-package Generics;
+package AdvancedTopics.Generics;
 
-public class GenDemo {
+public class Basic {
 	
 	  public static void main(String args[]) {
 	    

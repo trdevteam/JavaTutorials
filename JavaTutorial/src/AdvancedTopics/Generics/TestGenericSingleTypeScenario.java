@@ -6,7 +6,7 @@ import java.util.List;
 public class TestGenericSingleTypeScenario {
   
  public static void main(String[] args) {
-  GenericSingleTypeScenario<Integer> singleType = new GenericSingleTypeScenario<Integer>();
+  GenericSingleTypeScenario singleType = new GenericSingleTypeScenario();
   List<Integer> numbers = new ArrayList<Integer>();
   numbers.add(1); //autoboxes 1 to type Integer
   
