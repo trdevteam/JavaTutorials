@@ -4,16 +4,17 @@ import java.io.Serializable;
 
 public class Employee implements Serializable {
 
-//	private static final long serialVersionUID = -6470090944414208496L;
+	private static final long serialVersionUID = -6470090944414208496L;
 	
 	private String name;
 	private int id;
 	transient private int salary;
 	private String password;
+	private static String companyName = "Finansbank";
 	
 	@Override
 	public String toString(){
-		return "Employee{name="+name+",id="+id+",salary="+salary+"}";
+		return "Employee{name="+name+",id="+id+",salary="+salary+",companyName="+companyName+"}";
 	}
 	
 	//getter and setter methods

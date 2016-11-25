@@ -5,7 +5,7 @@ import java.io.IOException;
 public class TestSerialization {
 	
 	public static void main(String[] args) {
-		String fileName="employee.ser";
+		String fileName="employee.txt";
 		Employee emp = new Employee();
 		emp.setId(100);
 		emp.setName("Pankaj");
@@ -26,7 +26,7 @@ public class TestSerialization {
 			e.printStackTrace();
 		}
 		
-		System.out.println("emp Object::"+emp);
-		System.out.println("empNew Object::"+empNew);
+		System.out.println("Serialized Object::"+emp);
+		System.out.println("Deserialized Object::"+empNew);
 	}
 }
