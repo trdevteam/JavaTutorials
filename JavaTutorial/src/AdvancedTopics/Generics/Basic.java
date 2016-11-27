@@ -9,7 +9,7 @@ public class Basic {
 	    iOb.showType();
 
 	    int v = iOb.getob();
-	    System.out.println("value: " + v);
+	    System.out.println("deger: " + v);
 
 	    System.out.println();
 
