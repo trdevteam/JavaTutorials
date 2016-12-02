@@ -1,4 +1,4 @@
-package AdvancedTopics.Generics;
+package JavaBasics.Generics;
 
 import java.util.ArrayList;
 import java.util.List;

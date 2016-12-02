@@ -1,4 +1,4 @@
-package AdvancedTopics.Generics;
+package JavaBasics.Generics;
 
 public class Basic {
 	
