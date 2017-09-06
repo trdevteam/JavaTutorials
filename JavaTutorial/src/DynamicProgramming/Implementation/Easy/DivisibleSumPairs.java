@@ -1,4 +1,4 @@
-package Implementation.Easy;
+package DynamicProgramming.Implementation.Easy;
 
 import java.util.Scanner;
 
