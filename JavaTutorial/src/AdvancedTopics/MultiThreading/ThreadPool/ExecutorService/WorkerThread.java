@@ -1,5 +1,7 @@
 package AdvancedTopics.MultiThreading.ThreadPool.ExecutorService;
 
+import java.util.Date;
+
 public class WorkerThread implements Runnable {
 	  
     private String command;
@@ -10,14 +12,15 @@ public class WorkerThread implements Runnable {
 
     @Override
     public void run() {
-        System.out.println(Thread.currentThread().getName()+" Start. Command = "+command);
+        System.out.println(Thread.currentThread().getName()+" Starts at "  + new Date()+" - Command: "+command );
+//    	System.out.println("Time is :" + new Date()); // Display current time
         processCommand();
-        System.out.println(Thread.currentThread().getName()+" End.");
+        System.out.println(Thread.currentThread().getName()+" Ends at "  + new Date()+" - Command: "+command );
     }
 
     private void processCommand() {
         try {
-            Thread.sleep(30000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
