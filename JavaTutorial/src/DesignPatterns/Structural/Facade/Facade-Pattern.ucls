@@ -1,82 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class-diagram version="1.1.13" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+<class-diagram version="1.2.1" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="DesignPatterns.Structural.Adapter.SocketClassAdapterImpl" project="Tutorial" 
-    file="/Tutorial/src/DesignPatterns/Structural/Adapter/SocketClassAdapterImpl.java" binary="false" 
+  <class id="1" language="java" name="DesignPatterns.Structural.Facade.MySqlHelper" project="Tutorial" 
+    file="/Tutorial/src/DesignPatterns/Structural/Facade/MySqlHelper.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="191" y="157"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="DesignPatterns.Structural.Facade.OracleHelper" project="Tutorial" 
+    file="/Tutorial/src/DesignPatterns/Structural/Facade/OracleHelper.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="195" y="377"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="3" language="java" name="DesignPatterns.Structural.Facade.HelperFacade.DBTypes" project="Tutorial" 
+    file="/Tutorial/src/DesignPatterns/Structural/Facade/HelperFacade.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="626" y="335"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <enumeration id="4" language="java" name="DesignPatterns.Structural.Facade.HelperFacade.ReportTypes" 
+    project="Tutorial" file="/Tutorial/src/DesignPatterns/Structural/Facade/HelperFacade.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="132" y="566"/>    
+    <position height="-1" width="-1" x="897" y="344"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="5" language="java" name="DesignPatterns.Structural.Facade.TestFacadePattern" project="Tutorial" 
+    file="/Tutorial/src/DesignPatterns/Structural/Facade/TestFacadePattern.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="496" y="141"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="DesignPatterns.Structural.Adapter.Volt" project="Tutorial" 
-    file="/Tutorial/src/DesignPatterns/Structural/Adapter/Volt.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="724" y="137"/>    
+  <class id="6" language="java" name="DesignPatterns.Structural.Facade.HelperFacade" project="Tutorial" 
+    file="/Tutorial/src/DesignPatterns/Structural/Facade/HelperFacade.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="780" y="148"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="DesignPatterns.Structural.Adapter.SocketObjectAdapterImpl" project="Tutorial" 
-    file="/Tutorial/src/DesignPatterns/Structural/Adapter/SocketObjectAdapterImpl.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="633" y="536"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <interface id="4" language="java" name="DesignPatterns.Structural.Adapter.SocketAdapter" project="Tutorial" 
-    file="/Tutorial/src/DesignPatterns/Structural/Adapter/SocketAdapter.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="400" y="388"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </interface>  
-  <class id="5" language="java" name="DesignPatterns.Structural.Adapter.Socket" project="Tutorial" 
-    file="/Tutorial/src/DesignPatterns/Structural/Adapter/Socket.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="396" y="108"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="6" language="java" name="DesignPatterns.Structural.Adapter.TestAdapterPattern" project="Tutorial" 
-    file="/Tutorial/src/DesignPatterns/Structural/Adapter/TestAdapterPattern.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="966" y="143"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <generalization id="7">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="5"/>  
-  </generalization>  
-  <realization id="8">    
-    <end type="SOURCE" refId="1"/>    
+  <nesting id="7">    
+    <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="4"/>  
-  </realization>  
-  <association id="9">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="10" name="sock"/>      
-      <multiplicity id="11" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="12">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
+  </nesting>  
+  <nesting id="8">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="3"/>  
+  </nesting>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
