@@ -1,4 +1,4 @@
-package Java8.InterfaceChanges;
+package Java8.InterfaceChanges.DefaultMethod;
 
 public class MyClass implements Interface1, Interface2 {
 
@@ -18,6 +18,6 @@ public class MyClass implements Interface1, Interface2 {
 	}
 	
 	public static void main(String[] args) {
-		new MyClass().log("logla bakalým");
+		new MyClass().log("logla bakalÄ±m");
 	}
 }

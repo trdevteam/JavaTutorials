@@ -12,6 +12,16 @@ public class DateAPIUtilities {
 
 	public static void main(String[] args) {
 		
+		
+		String year = "2018";
+		String month = "03";
+		String day = "28";
+		
+		LocalDate today = LocalDate.of(Integer.valueOf(year), Integer.valueOf(month), Integer.valueOf(day));	
+		
+		System.out.println(today.getDayOfWeek());
+		
+		
 		TimeZone timeZone1 = TimeZone.getTimeZone("Europe/Istanbul");
 		TimeZone timeZone2 = TimeZone.getTimeZone("Europe/London");
 
@@ -28,7 +38,7 @@ public class DateAPIUtilities {
 		System.out.println("hour     = " + calendar.get(Calendar.HOUR_OF_DAY));
 	
 		
-		LocalDate today = LocalDate.now();
+	
 		
 		//Get the Year, check if it's leap year
 		System.out.println("Year "+today.getYear()+" is Leap Year? "+today.isLeapYear());
@@ -55,6 +65,8 @@ public class DateAPIUtilities {
 		
 		Period period = today.until(lastDayOfYear);
 		System.out.println("Period Format= "+period);
-		System.out.println("Months remaining in the year= "+period.getMonths());		
+		System.out.println("Months remaining in the year= "+period.getMonths());	
+		
+	
 	}
 }

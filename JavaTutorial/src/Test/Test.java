@@ -1,10 +1,22 @@
 package Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 public class Test {
 
 	public static void main(String[] args) {
+		
+		Email e = new Email();
+		
+		int[] arr1 =  {1,2,3,4,5};
+		
+		ArrayList<Integer> arList  = new ArrayList<>();
+		arList.add(1);
+		arList.add(1);
+		arList.add(1);
+		arList.add(1);
 		
 		String v = "tarikj-murat";
 		
@@ -12,11 +24,28 @@ public class Test {
 		
 		System.out.println("value = "+ v2);		
 		
-		ArrayList<String> liste = new ArrayList<String>();
+		ArrayList<Long> liste = new ArrayList<>();
 		
-		for(long i=0L;i<100000L;i++){
-			liste.add("tarik");
+		for(long i=0L;i<1000000L;i++){
+			liste.add(i);
 		}
+		
+		long startTime = System.currentTimeMillis();
+		int a = Collections.binarySearch(liste, 500000L);
+		
+		System.out.println(a);
+		
+		for(long l : liste) {
+			
+			if(l==500000L)
+				break;
+			
+		}
+		
+		
+		long endTime   = System.currentTimeMillis();
+		long totalTime = endTime - startTime;
+		System.out.println("time "+totalTime +" ms");
 		
 		classicFor(liste);
 		classicForEach(liste);
@@ -25,9 +54,10 @@ public class Test {
 		
 	}
 	
-	public static void classicFor(ArrayList<String> liste ){
+	public static void classicFor(ArrayList<Long> liste ){
 		
 		long startTime = System.currentTimeMillis();
+		
 		
 		for(int i = 0; i < liste.size(); i++) {
 			doIt(liste.get(i));
@@ -39,11 +69,11 @@ public class Test {
 		
 	}
 	
-	public static void classicForEach(ArrayList<String> liste ){
+	public static void classicForEach(ArrayList<Long> liste ){
 		
 		long startTime = System.currentTimeMillis();
 		
-		for(String i : liste) {
+		for(long i : liste) {
 			doIt(i);
 		}
 		
@@ -53,7 +83,7 @@ public class Test {
 		
 	}
 	
-	public static void listForEach(ArrayList<String> liste ){
+	public static void listForEach(ArrayList<Long> liste ){
 		
 		long startTime = System.currentTimeMillis();
 		
@@ -65,11 +95,11 @@ public class Test {
 		
 	}
 	
-	public static void doIt(String i) {
+	public static void doIt(long i) {
 		
 	}
 	
-	public static void streamListForEach(ArrayList<String> liste ){
+	public static void streamListForEach(ArrayList<Long> liste ){
 		
 		long startTime = System.currentTimeMillis();
 		liste.stream().forEach(i -> doIt(i));

@@ -1,4 +1,4 @@
-package Java8.InterfaceChanges;
+package Java8.InterfaceChanges.DefaultMethod;
 
 public interface Interface2 {
 

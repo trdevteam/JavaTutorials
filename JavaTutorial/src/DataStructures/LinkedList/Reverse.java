@@ -15,6 +15,7 @@ public class Reverse {
 	
 	
 	public static void main(String[] args) {
+		
 		Node root = new Reverse().createList();
 		new Reverse().printList(root);
 		System.out.println("");
@@ -57,8 +58,8 @@ public class Reverse {
 	    
 	}
 	
-	private Node reverseWithoutAnewList(Node head) {
-
+	private Node reverseWithoutAnewList(Node head) {		
+		
 	    Node prev = null;
 	    Node cur = head;
 	    Node next=null;

@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Notifier {
 
+	
 	List<Receiver> liste = new ArrayList<Receiver>();
 	
 	public void add(Receiver c) {

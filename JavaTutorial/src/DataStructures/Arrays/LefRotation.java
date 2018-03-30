@@ -10,8 +10,8 @@ public class LefRotation {
 		int n = scan.nextInt();
 		int r = scan.nextInt();
 		
-		int[] array = new int[n];
-		
+		int[] array = new int[n];		
+				
 		for(int i=0;i<n;i++){			
 			array[i] = scan.nextInt();				
 		}
@@ -29,6 +29,15 @@ public class LefRotation {
 			array[array.length-1] = temp;
 			
 		}
+		
+//		 int b[] = new int[n];
+//		 for(int j =0 ;j<n;j++){
+//		    b[Math.abs((n - (j-r)%n) % n)] = array[j];
+//		 }
+//		 
+//		 for(int i=0;i<n;i++){
+//				System.out.print(b[i]+" ");
+//		}
 		
 		for(int i=0;i<n;i++){
 			System.out.print(array[i]+" ");

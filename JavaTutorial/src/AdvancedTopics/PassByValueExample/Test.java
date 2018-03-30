@@ -27,10 +27,12 @@ public class Test {
 		Balloon blue = new Balloon("Blue"); //memory reference 100
 
 //		Memory adress
-//		System.out.println(red.getClass().getName() + "@" +     Integer.toHexString(System.identityHashCode(red)));
-//		System.out.println(blue.getClass().getName() + "@" +     Integer.toHexString(System.identityHashCode(blue)));
+		System.out.println(red.getClass().getName() + "@" +     Integer.toHexString(System.identityHashCode(red)));
+		System.out.println(blue.getClass().getName() + "@" +     Integer.toHexString(System.identityHashCode(blue)));
 		swap(red, blue);
 		
+		System.out.println(red.getClass().getName() + "@" +     Integer.toHexString(System.identityHashCode(red)));
+		System.out.println(blue.getClass().getName() + "@" +     Integer.toHexString(System.identityHashCode(blue)));		
 		
 		System.out.println("red color="+red.getColor());
 		System.out.println("blue color="+blue.getColor());
@@ -69,6 +71,10 @@ public class Test {
 		o2=temp;
 		
 		System.out.println("red color="+o1.getColor());
-		System.out.println("blue color="+o2.getColor());
+		System.out.println("blue color="+o2.getColor());	
+		
+		System.out.println("red adress" + o1.getClass().getName() + "@" +     Integer.toHexString(System.identityHashCode(o1)));
+		System.out.println("blue adress" + o2.getClass().getName() + "@" +     Integer.toHexString(System.identityHashCode(o2)));
+		
 	}
 }
