@@ -1,4 +1,4 @@
-package DynamicProgramming;
+package DataStructures.Arrays;
 
 import java.util.*;
 
@@ -48,11 +48,11 @@ public class TheMaximumSubArray {
             
             sum += Array[i];
             
-            if((non_contiguous < Array[i]|| Array[i]>=0) && non_contiguous<0)
-                non_contiguous=Array[i];
-            else if(Array[i]>=0){
-                non_contiguous+=Array[i];
-            }
+//            if((non_contiguous < Array[i]|| Array[i]>=0) && non_contiguous<0)
+//                non_contiguous=Array[i];
+//            else if(Array[i]>=0){
+//                non_contiguous+=Array[i];
+//            }
             
             if(Array[i]>sum)
             	sum=Array[i];
@@ -65,10 +65,10 @@ public class TheMaximumSubArray {
             
         }        
         
-        System.out.print(maxSum);
-        System.out.print(" ");
-        System.out.print(non_contiguous);
-        System.out.println("");
+        System.out.println(maxSum);
+//        System.out.print(" ");
+//        System.out.print(non_contiguous);
+//        System.out.println("");
     }	
-
+    
 }

@@ -8,6 +8,12 @@ public class Test {
 
 	public static void main(String[] args) {
 		
+		ArrayList<Integer> ilist = new ArrayList<>();
+		ilist.add(1);
+		ilist.add(2);
+		ilist.add(3);
+		ilist.add(4);
+		
 		Email e = new Email();
 		
 		int[] arr1 =  {1,2,3,4,5};
