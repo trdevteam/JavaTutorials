@@ -67,14 +67,16 @@ public class Test {
 	//Generic swap method
 	public static void swap(Balloon o1, Balloon o2){
 		Balloon temp = o1;
+		System.out.println("redS1 color="+o1.getColor());
+		System.out.println("blueS1 color="+o2.getColor());	
 		o1=o2;
 		o2=temp;
 		
-		System.out.println("red color="+o1.getColor());
-		System.out.println("blue color="+o2.getColor());	
+		System.out.println("redS2 color="+o1.getColor());
+		System.out.println("blueS2 color="+o2.getColor());	
 		
-		System.out.println("red adress" + o1.getClass().getName() + "@" +     Integer.toHexString(System.identityHashCode(o1)));
-		System.out.println("blue adress" + o2.getClass().getName() + "@" +     Integer.toHexString(System.identityHashCode(o2)));
+		System.out.println("redS2 adress" + o1.getClass().getName() + "@" +     Integer.toHexString(System.identityHashCode(o1)));
+		System.out.println("blueS3 adress" + o2.getClass().getName() + "@" +     Integer.toHexString(System.identityHashCode(o2)));
 		
 	}
 }

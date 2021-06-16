@@ -1,16 +1,16 @@
 package DesignPatterns.Structural.Decorator;
 
-public class CarDecorator implements Car {
+public class CarDecorator implements Car{
 
-	protected Car car;
+	Car c;
 	
-	public CarDecorator(Car c){
-		this.car=c;
+	public CarDecorator(Car c) {
+		this.c = c;
 	}
-	
+
 	@Override
 	public void assemble() {
-		this.car.assemble();
+		c.assemble();
 	}
-
+	
 }

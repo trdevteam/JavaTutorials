@@ -26,10 +26,10 @@ public class PalindromePartition {
 
 	         int j = i+len-1;              // Set ending index
 	         
-	         if (len == 2)                 //for two character string
-	            pal[i][j] = (str.charAt(i) == str.charAt(j));
-	         else                  //for string of more than two characters
-	            pal[i][j] = (str.charAt(i) == str.charAt(j)) && pal[i+1][j-1];
+//	         if (len == 2)                 //for two character string
+//	            pal[i][j] = (str.charAt(i) == str.charAt(j));
+//	         else                  //for string of more than two characters
+//	            pal[i][j] = (str.charAt(i) == str.charAt(j)) && pal[i+1][j-1];
 
 	         pal[i][j] = isPalindrome(str.substring(i,j));
 	         

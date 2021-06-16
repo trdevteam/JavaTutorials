@@ -164,6 +164,7 @@ public class BFS_DFS {
 	private static void getMaxLenthPath(Node root){
 		
 		Stack<Node> s = new Stack<Node>();
+		
 		s.add(root);
 		while (!s.isEmpty()) {
 			Node x = s.pop();
@@ -188,6 +189,7 @@ public class BFS_DFS {
 	private static void BFS(Node root){
 		
 		Queue<Node> q = new LinkedList<Node>();
+		
 		if (root == null)
 			return;
 		q.add(root);

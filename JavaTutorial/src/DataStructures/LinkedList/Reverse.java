@@ -58,6 +58,14 @@ public class Reverse {
 	    
 	}
 	
+	public Node reverseListRecursive(Node head) {
+	    if (head == null || head.next == null) return head;
+	    Node p = reverseListRecursive(head.next);
+	    head.next.next = head;
+	    head.next = null;
+	    return p;
+	}
+	
 	private Node reverseWithoutAnewList(Node head) {		
 		
 	    Node prev = null;

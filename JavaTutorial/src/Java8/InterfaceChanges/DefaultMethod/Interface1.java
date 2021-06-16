@@ -10,7 +10,7 @@ public interface Interface1 {
 	}
 	
 	static void print(String str){
-		System.out.println("Printing "+str);
+		System.out.println("Printing Interface1 "+str);
 	}
 	
 	//trying to override Object method gives compile time error as

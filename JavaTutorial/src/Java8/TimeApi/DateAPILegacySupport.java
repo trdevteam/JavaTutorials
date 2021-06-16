@@ -54,7 +54,7 @@ public class DateAPILegacySupport {
 		
 		//Date API to Legacy classes
 		Date dt = Date.from(Instant.now());
-		System.out.println(dt);
+		System.out.println("dd"+dt);
 		
 		TimeZone tz = TimeZone.getTimeZone(defaultZone);
 		System.out.println(tz);

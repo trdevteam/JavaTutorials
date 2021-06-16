@@ -17,6 +17,8 @@ public class DateAPIUtilities {
 		String month = "03";
 		String day = "28";
 		
+		LocalDate l = LocalDate.now();
+		
 		LocalDate today = LocalDate.of(Integer.valueOf(year), Integer.valueOf(month), Integer.valueOf(day));	
 		
 		System.out.println(today.getDayOfWeek());

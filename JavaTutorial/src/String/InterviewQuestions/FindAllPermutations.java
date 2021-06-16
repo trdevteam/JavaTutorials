@@ -27,8 +27,7 @@ public class FindAllPermutations {
 		}
 		
 		return perm;		
-	}
-	
+	}	
 	
 	public static String charInsert(String str,char c,int j){
 		
@@ -38,10 +37,36 @@ public class FindAllPermutations {
 		
 	}
 	
+
+	static ArrayList<String> permList = new ArrayList<String>();
+	
+	  // Function to print all the permutations of str 
+    static void getPermut(String str, String perm ) 
+    { 
+        if (str.length() == 0) { 
+        	permList.add(perm);
+            return; 
+        } 
+  
+        for (int i = 0; i < str.length(); i++) { 
+  
+            char ch = str.charAt(i); 
+  
+            String ros = str.substring(0, i) +  
+                         str.substring(i + 1); 
+  
+            getPermut(ros, perm+ch); 
+        } 
+        
+    } 
+	
 	public static void main(String[] args) {
 		
-		String s = "ABCD";
-		System.out.println(permutationFinder(s));
+		String s = "ABC";
+		ArrayList<String> perms = permutationFinder(s);
+		System.out.println(perms);
+		getPermut(s,"");
+		System.out.println(permList);
 	}
 	
 }
