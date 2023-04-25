@@ -1,4 +1,4 @@
-package AdvancedTopics.Serializable;
+package SerializableExample;
 
 import java.io.Serializable;
 

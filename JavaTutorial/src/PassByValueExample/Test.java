@@ -1,4 +1,4 @@
-package AdvancedTopics.PassByValueExample;
+package PassByValueExample;
 
 class Balloon {
 
@@ -32,13 +32,13 @@ public class Test {
 		swap(red, blue);
 		
 		
-		System.out.println("red color="+red.getColor());
-		System.out.println("blue color="+blue.getColor());
+		System.out.println("red color2="+red.getColor());
+		System.out.println("blue color2="+blue.getColor());
 		
 		System.out.println(blue.getClass().getName() + "@" +     Integer.toHexString(System.identityHashCode(blue)));
 		foo(blue);
 		System.out.println(blue.getClass().getName() + "@" +     Integer.toHexString(System.identityHashCode(blue)));
-		System.out.println("blue color="+blue.getColor());
+		System.out.println("blue color3="+blue.getColor());
 		
 		int a = 5;
 		int b= 3;
@@ -68,7 +68,7 @@ public class Test {
 		o1=o2;
 		o2=temp;
 		
-		System.out.println("red color="+o1.getColor());
-		System.out.println("blue color="+o2.getColor());
+		System.out.println("red color1="+o1.getColor());
+		System.out.println("blue color1="+o2.getColor());
 	}
 }
