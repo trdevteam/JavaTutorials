@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class BeatifulString {
 
-	//Sample Inputs
+	//Sample Inputs changed
 	//10
 	//0100101010
 	
