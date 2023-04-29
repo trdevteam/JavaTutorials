@@ -24,6 +24,9 @@ public class StreamApi {
 		
 		Stream<Integer> highNumsSeq = sequentialStream.filter(p -> p > 85);
 		highNumsSeq.forEach(p -> System.out.println("High Nums sequential="+p));
+		
+		Stream<Integer> highNumsSeq2 = sequentialStream.filter(p -> p > 100);
+		highNumsSeq2.forEach(p -> System.out.println("High Nums sequential="+p));
 
 	}
 
